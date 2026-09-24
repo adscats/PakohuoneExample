@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kivi: Viimeinen johtolanka</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav>
+      <div class="logo">KIVI<span>//</span>CASE 05</div>
+      <a href="#toteutus">Toteutus</a>
+    </nav>
+
+    <div class="hero-content">
+      <p class="eyebrow">LUOTTAMUKSELLINEN TUTKINTA-AINEISTO</p>
+      <h1>Viimeinen<br><span>johtolanka</span></h1>
+      <p class="intro">
+        Viiden huoneen pakohuone-elämys, jossa tarina, pulmat,
+        tekniikka, ääni ja valaistus muodostavat yhden kokonaisuuden.
+      </p>
+      <button id="startButton" class="primary-button">Käynnistä esittely</button>
+      <div id="timer" class="timer">60:00</div>
+    </div>
+
+    <div class="hero-stamp">CASE<br>ACTIVE</div>
+  </header>
+
+  <main>
+    <section class="briefing section">
+      <div>
+        <p class="eyebrow">PROJEKTIN TAVOITE</p>
+        <h2>Tarina muuttuu<br><span>elämykseksi.</span></h2>
+      </div>
+      <p>
+        Kivi on kadonnut ja hänen verkostonsa toimii edelleen.
+        Pelaajilla on 60 minuuttia aikaa seurata johtolankoja viiden
+        huoneen läpi ja pysäyttää uhka. Tämä verkkosivu esittelee
+        tulevan fyysisen toteutuksen.
+      </p>
+    </section>
+
+    <section id="huoneet" class="rooms section">
+      <div class="section-heading">
+        <p class="eyebrow">PELIN RAKENNE</p>
+        <h2>Viisi huonetta.<br><span>Yksi tarina.</span></h2>
+      </div>
+
+      <div class="room-grid">
+        <article class="room-card room-one">
+          <img class="room-image" src="./image/1h.jpg" alt="Tutkintahuone" loading="lazy">
+          <div class="room-number">01</div>
+          <div class="room-content">
+            <p class="eyebrow">ALOITUS</p>
+            <h3>Tutkinta alkaa</h3>
+            <p>Asiakirjat, valokuvat ja ensimmäinen johtolanka.</p>
+          </div>
+        </article>
+
+        <article class="room-card room-two">
+          <img class="room-image" src="./image/2h.jpg" alt="Karttahuone" loading="lazy">
+          <div class="room-number">02</div>
+          <div class="room-content">
+            <p class="eyebrow">SIJAINTI</p>
+            <h3>Karttahuone</h3>
+            <p>Kartat ja koordinaatit johdattavat seuraavaan paikkaan.</p>
+          </div>
+        </article>
+
+        <article class="room-card room-three">
+          <img class="room-image" src="./image/3h.jpg" alt="Käytävä ja tutkintahuone" loading="lazy">
+          <div class="room-number">03</div>
+          <div class="room-content">
+            <p class="eyebrow">EPÄILTY</p>
+            <h3>Kuka on kätyri?</h3>
+            <p>Henkilömapit paljastavat yhden ristiriidan.</p>
+          </div>
+        </article>
+
+        <article class="room-card room-four">
+          <img class="room-image" src="./image/4h.jpg" alt="Pimeä huone" loading="lazy">
+          <div class="room-number">04</div>
+          <div class="room-content">
+            <p class="eyebrow">PALJASTUS</p>
+            <h3>Pimeä huone</h3>
+            <p>UV-valo paljastaa näkymättömät symbolit.</p>
+          </div>
+        </article>
+
+        <article class="room-card room-five">
+          <img class="room-image" src="./image/5h.jpg" alt="Loppuratkaisun huone" loading="lazy">
+          <div class="room-number">05</div>
+          <div class="room-content">
+            <p class="eyebrow">LOPPU</p>
+            <h3>Uhka pysäytetään</h3>
+            <p>Viimeinen järjestelmä pitää sammuttaa ennen ajan loppua.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="challenge-section section" id="haasteet">
+      <div class="section-heading">
+        <p class="eyebrow">PELIN SISÄLTÖ</p>
+        <h2>Haasteet ilman<br><span>ratkaisupaljastuksia.</span></h2>
+      </div>
+
+      <div class="challenge-list">
+        <details class="challenge">
+          <summary>
+            <div>
+              <p class="eyebrow">HUONE 01</p>
+              <h3>Kadonnut päivämäärä</h3>
+            </div>
+          </summary>
+          <div class="challenge-body">
+            <p>
+              Pelaajat tutkivat asiakirjoja, sanomalehtiä, valokuvia ja
+              muistikirjaa. Päivämäärät, sivunumerot ja asiakirjojen
+              yksityiskohdat muodostavat loogisen järjestyksen.
+            </p>
+            <p>
+              Tehtävä antaa pelaajille ensimmäisen suunnan ja avaa pääsyn
+              seuraavaan tutkinta-aineistoon.
+            </p>
+            <p><strong>Rekvisiitta:</strong> asiakirjat, kansiot, valokuvat, muistikirja, pöytä, tietokone ja radiopuhelin.</p>
+          </div>
+        </details>
+
+        <details class="challenge">
+          <summary>
+            <div>
+              <p class="eyebrow">HUONE 02</p>
+              <h3>Kolme risteävää viivaa</h3>
+            </div>
+          </summary>
+          <div class="challenge-body">
+            <p>
+              Pelaajat yhdistävät suuren seinäkartan, pienemmän kaupunkikartan,
+              koordinaatit ja punaiset langat. Tehtävä perustuu havaintojen
+              yhdistämiseen, ei yksittäisen numeron löytämiseen.
+            </p>
+            <p>
+              Oikea sijainti johdattaa seuraavaan huoneeseen ja kertoo,
+              mitä henkilömappeja pitää tutkia.
+            </p>
+            <p><strong>Rekvisiitta:</strong> kartat, langat, kompassi, nastat, koordinaattilaput ja puulaatikko.</p>
+          </div>
+        </details>
+
+        <details class="challenge">
+          <summary>
+            <div>
+              <p class="eyebrow">HUONE 03</p>
+              <h3>Kuka valehtelee?</h3>
+            </div>
+          </summary>
+          <div class="challenge-body">
+            <p>
+              Neljä henkilömap­pia sisältää kertomuksia, työvuoroja,
+              puhelulokeja, valokuvia ja matkustustietoja. Pelaajien tulee
+              verrata eri lähteitä toisiinsa.
+            </p>
+            <p>
+              Jokainen epäilty vaikuttaa aluksi epäilyttävältä, mutta vain
+              yhden henkilön tiedoissa on ratkaiseva ristiriita.
+            </p>
+            <p><strong>Rekvisiitta:</strong> neljä henkilömap­pia, pöytä, suurennuslasit, valokuvaseinä ja puhelulokit.</p>
+          </div>
+        </details>
+
+        <details class="challenge">
+          <summary>
+            <div>
+              <p class="eyebrow">HUONE 04</p>
+              <h3>UV:n paljastama viesti</h3>
+            </div>
+          </summary>
+          <div class="challenge-body">
+            <p>
+              Hämärässä huoneessa pelaajat etsivät UV-valolla symboleita,
+              nuolia ja lyhyitä viestejä. Löydöt pitää järjestää yhdeksi
+              kokonaisuudeksi.
+            </p>
+            <p>
+              Tehtävä toimii visuaalisena huippukohtana: valaistus muuttuu,
+              äänimaailma voimistuu ja seuraava sijainti varmistuu.
+            </p>
+            <p><strong>Rekvisiitta:</strong> turvallinen UV-lamppu, symbolikortit, kartta, taskulamput ja suojalasit.</p>
+          </div>
+        </details>
+
+        <details class="challenge">
+          <summary>
+            <div>
+              <p class="eyebrow">HUONE 05</p>
+              <h3>Viimeinen pysäytys</h3>
+            </div>
+          </summary>
+          <div class="challenge-body">
+            <p>
+              Pelaajat yhdistävät aikaisempien huoneiden tiedot ja käyttävät
+              niitä viimeisessä ohjauspaneelissa. Näyttö näyttää ajan,
+              järjestelmän tilan ja uhkan etenemisen.
+            </p>
+            <p>
+              Loppuratkaisun onnistuminen pysäyttää hälytyksen, vaihtaa
+              valaistuksen ja aktivoi päätösviestin.
+            </p>
+            <p><strong>Rekvisiitta:</strong> näyttö, laskuri, näppäimistö, varoitusvalo, ohjauspaneeli ja lukittu laatikko.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="implementation section" id="toteutus">
+      <div class="section-heading">
+        <p class="eyebrow">REAALIMAAILMAN TOTEUTUS</p>
+        <h2>Lukot, anturit<br><span>ja tekniikka.</span></h2>
+      </div>
+
+      <div class="build-plan">
+        <article class="build-card">
+          <p class="eyebrow">HUONE 01 — FYYSINEN LUKITUS</p>
+          <h3>Asiakirjakansio</h3>
+          <p>
+            Pelaajat ratkaisevat asiakirjatehtävän. Valmis tehtävä ei avaa
+            ovea, vaan seuraavan materiaalin.
+          </p>
+          <dl>
+            <dt>Lukko</dt>
+            <dd>Master Lock- tai ABUS-tyyppinen mekaaninen nelinumeroinen riippulukko.</dd>
+            <dt>Rakenne</dt>
+            <dd>Puinen kansio, metallinen haspi ja riippulukon vastakappale.</dd>
+            <dt>Tunnistus</dt>
+            <dd>Kansion sisään sijoitettu pieni neodyymimagneetti ja reed-kytkin.</dd>
+            <dt>Elektroniikka</dt>
+            <dd>Raspberry Pi GPIO -tulo lukee reed-kytkimen tilan.</dd>
+            <dt>Tapahtuma</dt>
+            <dd>Radiopuhelin toistaa seuraavan tehtäväviestin ja pöytävalo syttyy.</dd>
+          </dl>
+        </article>
+
+        <article class="build-card">
+          <p class="eyebrow">HUONE 02 — KARTTAMEKANISMI</p>
+          <h3>Oikea karttapala</h3>
+          <p>
+            Pelaajat asettavat karttapalat oikeille paikoille ja yhdistävät
+            kohteet punaisilla langoilla.
+          </p>
+          <dl>
+            <dt>Lukko</dt>
+            <dd>Servolukko tai 12 V sähköinen kaappisalpa puulaatikossa.</dd>
+            <dt>Tunnistus</dt>
+            <dd>Hall-anturit tunnistavat karttapalojen magneetit.</dd>
+            <dt>Ohjain</dt>
+            <dd>Arduino Nano lukee anturit ja ohjaa servoa.</dd>
+            <dt>Valo</dt>
+            <dd>WS2812B RGB-LED-nauha näyttää väärän, odottavan tai oikean tilan.</dd>
+            <dt>Varmistus</dt>
+            <dd>Laatikossa on myös mekaaninen huoltoavain sähkövian varalle.</dd>
+          </dl>
+        </article>
+
+        <article class="build-card">
+          <p class="eyebrow">HUONE 03 — HENKILÖMAPIT</p>
+          <h3>RFID-tunnistus</h3>
+          <p>
+            Pelaajat löytävät oikean henkilön analysoimalla aineistoa ja
+            asettavat mapin lukupisteeseen.
+          </p>
+          <dl>
+            <dt>Lukija</dt>
+            <dd>PN532 NFC/RFID -lukija tai MFRC522-moduuli.</dd>
+            <dt>Tunnisteet</dt>
+            <dd>Jokaisessa mapissa on eri RFID-tarra tai NFC-kortti.</dd>
+            <dt>Lukko</dt>
+            <dd>12 V solenoidisalpa vapauttaa sähkökaapin vain oikealla tunnisteella.</dd>
+            <dt>Ääni</dt>
+            <dd>USB-äänikortti ja pieni aktiivikaiutin toistavat puhelun yhdistymisen.</dd>
+            <dt>Pelinohjaus</dt>
+            <dd>Väärä tunniste ei riko peliä eikä lukitse järjestelmää.</dd>
+          </dl>
+        </article>
+
+        <article class="build-card">
+          <p class="eyebrow">HUONE 04 — UV-TEHTÄVÄ</p>
+          <h3>Sekvenssilukko</h3>
+          <p>
+            Pelaajat etsivät UV-merkinnät ja asettavat symbolikortit oikeaan
+            järjestykseen. Fyysistä ovea ei lukita sähköllä.
+          </p>
+          <dl>
+            <dt>Merkinnät</dt>
+            <dd>UV-reaktiivinen vesipohjainen kynä tai valmis UV-maali.</dd>
+            <dt>Tunnistus</dt>
+            <dd>Reed-kytkimet, Hall-anturit tai NFC-lukijat korttipaikoissa.</dd>
+            <dt>Ohjain</dt>
+            <dd>ESP32 tarkistaa korttien järjestyksen ja lähettää tapahtuman MQTT:llä.</dd>
+            <dt>Valaistus</dt>
+            <dd>Himmennettävä työvalo, UV-lamppu ja erillinen punainen varoitusvalo.</dd>
+            <dt>Turvallisuus</dt>
+            <dd>Käytetään vain matalatehoista UV-A-valoa, ei UV-C-laitteita.</dd>
+          </dl>
+        </article>
+
+        <article class="build-card">
+          <p class="eyebrow">HUONE 05 — LOPPUPANEELI</p>
+          <h3>Loppulaitteisto</h3>
+          <p>
+            Pelaajat käyttävät aiempia vihjeitä viimeisessä ohjauspaneelissa,
+            joka simuloi uhkan pysäyttämistä.
+          </p>
+          <dl>
+            <dt>Syöttö</dt>
+            <dd>USB-numeronäppäimistö tai Arduinoon kytketty 4×4-matriisinäppäimistö.</dd>
+            <dt>Lukko</dt>
+            <dd>12 V fail-safe-solenoidi lukittuun laatikkoon, ei poistumisoveen.</dd>
+            <dt>Näyttö</dt>
+            <dd>HDMI-näyttö tai Raspberry Pi -yhteensopiva LCD-paneeli.</dd>
+            <dt>Hälytys</dt>
+            <dd>12 V summeri tai aktiivikaiutin ohjelmoitua hälytysääntä varten.</dd>
+            <dt>Loppu</dt>
+            <dd>Oikea tapahtuma pysäyttää laskurin ja vaihtaa punaisen valon vihreäksi.</dd>
+          </dl>
+        </article>
+
+        <article class="build-card">
+          <p class="eyebrow">KESKUSJÄRJESTELMÄ</p>
+          <h3>Pelinohjaajan asema</h3>
+          <p>
+            Kaikki huoneet yhdistetään keskitettyyn ohjausjärjestelmään, jota
+            pelinohjaaja valvoo erilliseltä tietokoneelta tai tabletilta.
+          </p>
+          <dl>
+            <dt>Pääohjain</dt>
+            <dd>Raspberry Pi 4 tai 5, joka toimii paikallisena palvelimena.</dd>
+            <dt>Huoneohjaimet</dt>
+            <dd>ESP32- tai Arduino-laitteet erillisiin anturi- ja valoryhmiin.</dd>
+            <dt>Yhteys</dt>
+            <dd>MQTT paikallisessa verkossa tai WebSocket-yhteys selainohjaimelle.</dd>
+            <dt>Ohjelmisto</dt>
+            <dd>Python-palvelu, Node.js-palvelin tai Node-RED tapahtumien hallintaan.</dd>
+            <dt>Ohitus</dt>
+            <dd>Pelinohjaajalla on fyysiset ohituspainikkeet ja vara-avaimet.</dd>
+          </dl>
+        </article>
+      </div>
+
+      <div class="equipment-section">
+        <p class="eyebrow">ÄÄNI, VALO JA VIRRANSYÖTTÖ</p>
+        <h3>Tekninen varustelu</h3>
+
+        <div class="equipment-grid">
+          <div>
+            <strong>Äänet</strong>
+            <p>
+              Raspberry Pi, USB-äänikortti, 2–4 aktiivikaiutinta, pieni vahvistin,
+              radiopuhelimen kaltainen kaiutin sekä WAV-tiedostoihin perustuvat
+              ääniefektit. Äänet käynnistetään anturitapahtumista.
+            </p>
+          </div>
+
+          <div>
+            <strong>Valaistus</strong>
+            <p>
+              12 V RGB-LED-nauhat, PWM-himmennin, punainen varoitusvalo,
+              sininen vahvistusvalo ja erillinen verkkovirrasta riippumaton
+              hätävalaistus.
+            </p>
+          </div>
+
+          <div>
+            <strong>Lukot</strong>
+            <p>
+              Mekaaniset numerolukot yksinkertaisiin tehtäviin, servolukot
+              kevyisiin laatikoihin, RFID-lukijat tunnistukseen ja 12 V
+              solenoidisalvat sähköisiin kaappeihin.
+            </p>
+          </div>
+
+          <div>
+            <strong>Anturit</strong>
+            <p>
+              Reed-kytkimet kansiin ja oviin, Hall-anturit magneetteihin,
+              NFC/RFID-lukijat kortteihin, painikkeet sekä rajakytkimet
+              mekaanisten liikkeiden varmistamiseen.
+            </p>
+          </div>
+
+          <div>
+            <strong>Kaapelointi</strong>
+            <p>
+              Kaapelit sijoitetaan suojaputkiin ja merkitään molemmista päistä.
+              Jokaiselle huoneelle tehdään oma sulakkeellinen virtaryhmä ja
+              erillinen huoltopaneeli.
+            </p>
+          </div>
+
+          <div>
+            <strong>Testaus</strong>
+            <p>
+              Jokainen anturi, lukko, kaiutin, valo ja ohituspainike testataan
+              erikseen. Peli testataan kokonaan vähintään kolmella eri ryhmällä.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="safety-notice">
+        <p class="eyebrow">TURVALLISUUS</p>
+        <p>
+          Pelaajia ei lukita oikeasti poistumisreitin taakse. Kaikki ovet on
+          voitava avata heti ilman sähköä. Sähköisissä lukoissa käytetään
+          pienjännitettä, sulakkeita ja suojattuja virtalähteitä. UV-tehtävässä
+          käytetään vain matalatehoista UV-A-valoa. Jokaisessa huoneessa on
+          hätävalaistus, paloturvallinen kulkureitti, keskeytyspainike ja
+          pelinohjaajan manuaalinen ohitus.
+        </p>
+      </div>
+    </section>
+
+    <section class="budget section" id="budjetti">
+      <div class="section-heading">
+        <p class="eyebrow">HANKINTASUUNNITELMA</p>
+        <h2>Arvioitu<br><span>budjetti.</span></h2>
+      </div>
+
+      <p class="budget-intro">
+        Hinnat ovat suuntaa-antavia Suomen verkkokauppahintoja. Lopullinen hinta
+        riippuu huoneiden koosta, käytetyistä materiaaleista ja siitä, mitä
+        koululta tai yhteistyökumppaneilta löytyy valmiiksi.
+      </p>
+
+      <div class="budget-table-wrap">
+        <table class="budget-table">
+          <thead>
+            <tr>
+              <th>Kategoria</th>
+              <th>Hankinta</th>
+              <th>Määrä</th>
+              <th>Arvio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Rakenteet</td>
+              <td>Kierrätetty vaneri, pahvi, maalit ja kiinnikkeet</td>
+              <td>5 huonetta</td>
+              <td>300 €</td>
+            </tr>
+            <tr>
+              <td>Rekvisiitta</td>
+              <td>Itse tulostetut asiakirjat, kartat, kansiot ja valokuvat</td>
+              <td>1 kokonaisuus</td>
+              <td>80 €</td>
+            </tr>
+            <tr>
+              <td>Mekaaniset lukot</td>
+              <td>Numerolukot, riippulukot, haspit ja vara-avaimet</td>
+              <td>8 kpl</td>
+              <td>90 €</td>
+            </tr>
+            <tr>
+              <td>Sähkölukot</td>
+              <td>Yksi servo- tai solenoidilukko tärkeimpään laatikkoon</td>
+              <td>1–2 kpl</td>
+              <td>90 €</td>
+            </tr>
+            <tr>
+              <td>Ohjaimet</td>
+              <td>Yksi Raspberry Pi ja kaksi ESP32-ohjainta</td>
+              <td>3 kpl</td>
+              <td>100 €</td>
+            </tr>
+            <tr>
+              <td>Anturit</td>
+              <td>Reed-kytkimet, painikkeet ja muutama Hall-anturi</td>
+              <td>15 kpl</td>
+              <td>45 €</td>
+            </tr>
+            <tr>
+              <td>RFID/NFC</td>
+              <td>Yksi lukija vain yhteen näyttävään tehtävään</td>
+              <td>1 lukija</td>
+              <td>35 €</td>
+            </tr>
+            <tr>
+              <td>Virtalähteet</td>
+              <td>5 V/12 V virtalähteet, sulakkeet ja liittimet</td>
+              <td>1 järjestelmä</td>
+              <td>90 €</td>
+            </tr>
+            <tr>
+              <td>Valaistus</td>
+              <td>Edulliset RGB-LED-nauhat, työvalot ja varoitusvalo</td>
+              <td>5 huonetta</td>
+              <td>120 €</td>
+            </tr>
+            <tr>
+              <td>Äänitekniikka</td>
+              <td>Käytetyt tietokonekaiuttimet ja Raspberry Pi:n äänentoisto</td>
+              <td>1 järjestelmä</td>
+              <td>60 €</td>
+            </tr>
+            <tr>
+              <td>Näytöt</td>
+              <td>Yksi käytetty televisio ja vanhat tabletit</td>
+              <td>1 + 2 kpl</td>
+              <td>100 €</td>
+            </tr>
+            <tr>
+              <td>UV-tehtävä</td>
+              <td>UV-A-lamput, UV-kynät ja taskulamput</td>
+              <td>1 kokonaisuus</td>
+              <td>35 €</td>
+            </tr>
+            <tr>
+              <td>Turvallisuus</td>
+              <td>Hätävalaistus, ohituspainikkeet, ensiapu ja palosammutin</td>
+              <td>1 kokonaisuus</td>
+              <td>150 €</td>
+            </tr>
+            <tr>
+              <td>Kaapelointi</td>
+              <td>Johdot, suojaputket ja kaapelimerkinnät</td>
+              <td>1 kokonaisuus</td>
+              <td>80 €</td>
+            </tr>
+            <tr>
+              <td>Varaosat</td>
+              <td>Varasensorit, sulakkeet ja mekaaniset varaosat</td>
+              <td>1 paketti</td>
+              <td>80 €</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th colspan="3">Arvioitu kokonaishinta</th>
+              <th>1 455 €</th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <div class="budget-note">
+        <strong>Edullinen prototyyppi:</strong>
+        noin 1 455 €.
+        Kun mukaan lisätään 15 % varabudjetti, kokonaisarvio on noin
+        <strong>1 700 €</strong>.
+        Kalleimmat osat voidaan myöhemmin vaihtaa parempiin.
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>KIVI//CASE 05</span>
+    <span>FYYSINEN PROTOTYYPPI</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
